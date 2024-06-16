@@ -1,0 +1,271 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(236, 229, 229);
+	background-color: #1b2845;
+	font-size: 20px;
+}
+
+h1 {
+	text-transform: uppercase;
+	text-align: center;
+	/* padding: 30px; */
+	font-size: 3.5rem;
+	font-weight: 100;
+	margin-bottom: 1rem;
+	margin-top: -4rem;
+	letter-spacing: 6px;
+}
+
+.wrapper {
+	width: 1300px;
+	height: auto;
+	padding: 60px 10px 50px 10px;
+
+	background-color: #c11d38;
+	background-image: linear-gradient(315deg, #c11d38 0%, #f8b329 74%);
+	border: 2px solid white;
+	border-radius: 25px;
+	-webkit-box-shadow: 0px 8px 24px 0px rgba(38, 35, 35, 1);
+	-moz-box-shadow: 0px 8px 24px 0px rgba(38, 35, 35, 1);
+	box-shadow: 0px 2px 24px 0px rgba(255, 252, 252, 0.469);
+}
+
+.top-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 2rem;
+}
+
+.one {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.fa-magnifying-glass {
+	padding: 0 1rem;
+}
+
+.city {
+	text-align: center;
+	font-size: 4rem;
+	font-weight: 200;
+}
+
+.input-city {
+	font-size: 24px;
+	padding: 5px 10px;
+	margin-top: 1px;
+	background: none;
+	border: none;
+	color: #2b4d7c;
+	border-bottom: 2px solid #ddd;
+	background-color: #fff;
+	width: 429px;
+	border-radius: 10px;
+}
+
+.input-city::placeholder {
+	color: #2b4d7ca2;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2rem;
+	font-weight: normal;
+}
+
+.find,
+.gps {
+	padding: 10px;
+	margin-left: 15px;
+	color: #fff;
+	font-weight: bold;
+	background: none;
+	background-color: #2b4d7c;
+	border-radius: 5px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.gps {
+	padding: 10px 25px;
+}
+
+.find:hover,
+.gps:hover {
+	color: white;
+	background-color: #3b5d9b;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+.top {
+	height: 300px;
+}
+
+.bottom {
+	height: 140px;
+}
+
+.main-info {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 80px 80px 30px;
+}
+
+.city-name {
+	font-size: 40px;
+}
+
+.main-temperature {
+	font-size: 4rem;
+	grid-column: 4/6;
+	grid-row: 1/3;
+	align-self: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.main-description {
+	font-size: 1.2rem;
+	grid-column: 1/3;
+	grid-row: 3/4;
+	align-self: center;
+	margin-left: 2rem;
+}
+
+.main-feels-temp,
+.main-pressure,
+.main-wind,
+.main-humidity {
+	grid-row: 1/3;
+	text-align: center;
+	align-self: center;
+	border-right: 1px solid #ffffff;
+	padding: 0 12px;
+	line-height: 28px;
+}
+
+.wrap-parameters {
+	display: flex;
+	grid-column: 7/13;
+	grid-row: 1/3;
+	font-size: 1rem;
+	white-space: nowrap;
+}
+
+.wrap-sun {
+	display: flex;
+	grid-column: 1/9;
+	grid-row: 3/4;
+	margin-top: 10px;
+}
+
+.main-humidity.last {
+	border-right: none;
+}
+
+.headings,
+.weather-info {
+	display: flex;
+	align-items: center;
+}
+
+.headings p,
+.weather-info p {
+	width: 33.3%;
+	text-align: center;
+}
+
+.headings {
+	height: 35%;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.weather-info {
+	height: 65%;
+	font-size: 26px;
+}
+
+.photo {
+	margin-left: 2rem;
+	width: 70%;
+	height: 70%;
+	object-fit: contain;
+	align-self: center;
+
+	grid-column: 1/4;
+	grid-row: 1/3;
+}
+
+.warning {
+	margin-top: 10px;
+	font-size: 14px;
+	color: rgb(71, 89, 255);
+}
+
+.date-info {
+	width: 100%;
+	height: 30px;
+}
+
+.time {
+	grid-column: 3/5;
+	grid-row: 3/4;
+	margin-left: 2rem;
+	align-self: center;
+	font-size: 1.2rem;
+}
+
+.container-time {
+	display: flex;
+	align-items: center;
+	/* gap: 10px; */
+}
+
+/* .sun-wrap {
+	margin-left: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	gap: 20px;
+} */
+
+.sunrise,
+.sunset {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.sunset img,
+.sunrise img {
+	margin-right: 8px;
+}
+
+.sunrise {
+	margin-left: 30px;
+	align-self: center;
+	font-size: 1.2rem;
+}
+
+.sunset {
+	margin-left: 25px;
+	align-self: center;
+	font-size: 1.2rem;
+}
+
+

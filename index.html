@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 days Weather API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&family=Open+Sans:wght@300;400;700&family=PT+Sans&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3a898e64da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+    <div class="center">
+        <h1>Prognoza pogody</h1>
+        <div class="wrapper">
+            <div class="top">
+                <div class="top-wrapper">
+                    <div class="two">
+                        <div class="city"></div>
+                    </div>
+                    <div class="one">
+                        <input class="input-city" type="text" placeholder="Wpisz nazwę miejscowości">
+                        <button class="find"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button class="gps"><i class="fa-solid fa-location-crosshairs"></i></button>
+                        <p class="warning"></p>
+                    </div>
+                </div>
+
+                <div class="main-info">
+                    <img src="img/unknown.png" alt="Obrazek przedstawiający pogodę" class="photo">
+                    <div class="main-temperature"></div>
+
+                    <div class="wrap-parameters">
+                        <div class="main-feels-temp"></div>
+                        <div class="main-pressure"></div>
+                        <div class="main-wind"></div>
+                        <div class="main-humidity last"></div>
+
+                    </div>
+                    <div class="wrap-sun">
+                        <div class="main-description"></div>
+                        <div class="time"></div>
+                        <div class="sunrise">
+                            <img src="img/sunrise.svg" alt="icon sunrise">
+                            <span class="time-sunrise"></span>
+                        </div>
+                        <div class="sunset">
+                            <img src="img/sunset.svg" alt="icon sunset">
+                            <span class="time-sunset"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+
+</html>
