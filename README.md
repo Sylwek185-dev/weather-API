@@ -39,4 +39,5 @@ git clone https://github.com/Sylwek185-dev/weather-API.git
 ```
 
 ### Kontakt
+
 Sylwek185 - sylwek185@op.pl
