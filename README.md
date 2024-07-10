@@ -1,6 +1,6 @@
 # Weather API Application
 
-https://github.com/Sylwek185-dev/weather-API.git
+https://sylwek185-dev.github.io/weather-API/
 
 Prosta i intuicyjna aplikacja pogodowa zbudowana z użyciem HTML, CSS, JavaScript oraz zewnętrznego API pogodowego.
 
